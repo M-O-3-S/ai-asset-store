@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Asset Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <h1>AI Asset Store</h1>
+      <p class="subtitle">사내 AI 도구용 Skill, Rules, Persona, Prompt 모음</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="controls">
+      <input
+        type="search"
+        id="search"
+        placeholder="검색... (제목, 태그, 설명)"
+        autocomplete="off"
+      />
+      <div class="filters" id="filters">
+        <button class="filter-btn active" data-type="all">전체</button>
+        <button class="filter-btn" data-type="skill">Skill</button>
+        <button class="filter-btn" data-type="rules">Rules</button>
+        <button class="filter-btn" data-type="persona">Persona</button>
+        <button class="filter-btn" data-type="prompt">Prompt</button>
+        <button class="filter-btn" data-type="workflow">Workflow</button>
+      </div>
+    </div>
+
+    <div id="stats" class="stats"></div>
+    <div id="grid" class="grid"></div>
+    <div id="empty" class="empty hidden">검색 결과가 없습니다.</div>
+    <div id="loading" class="loading">불러오는 중...</div>
+  </main>
+
+  <!-- 상세 모달 -->
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-box">
+      <button class="modal-close" id="modal-close" aria-label="닫기">&times;</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

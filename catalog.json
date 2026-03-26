@@ -1,0 +1,121 @@
+[
+  {
+    "id": "git-commit-message",
+    "type": "prompt",
+    "title": "Git 커밋 메시지 생성기",
+    "description": "Conventional Commits 규격에 맞는 커밋 메시지를 자동 생성합니다. diff를 분석하여 적절한 type, scope, 설명을 제안합니다.",
+    "tags": [
+      "git",
+      "commit",
+      "conventional-commits",
+      "productivity"
+    ],
+    "tools": [
+      "cline",
+      "cursor"
+    ],
+    "author": "team-devops@company.com",
+    "version": "1.0.3",
+    "updated": "2026-03-22",
+    "file": "prompt.md",
+    "preview": "git diff 또는 변경 내용 설명을 입력하면 Conventional Commits 규격(feat/fix/docs/refactor 등)에 맞는 커밋 메시지를 생성합니다.",
+    "category": "prompts",
+    "zipPath": "zips/git-commit-message.tar.gz"
+  },
+  {
+    "id": "embedded-c-refactor",
+    "type": "skill",
+    "title": "임베디드 C 리팩토링 가이드",
+    "description": "SOLID 원칙 기반 C 코드 개선 에이전트 지침. 펌웨어 레이어 분리, 헤더 의존성 정리, 매직 넘버 제거 등을 체계적으로 수행합니다.",
+    "tags": [
+      "embedded",
+      "C",
+      "refactoring",
+      "firmware",
+      "SOLID"
+    ],
+    "tools": [
+      "cline",
+      "cursor"
+    ],
+    "author": "team-firmware@company.com",
+    "version": "1.2.0",
+    "updated": "2026-03-20",
+    "file": "SKILL.md",
+    "preview": "이 스킬은 임베디드 C 코드베이스를 SOLID 원칙에 따라 리팩토링합니다. HAL 레이어 분리, 전역 변수 최소화, 단위 테스트 가능한 구조로 개선합니다.",
+    "category": "skills",
+    "zipPath": "zips/embedded-c-refactor.tar.gz"
+  },
+  {
+    "id": "senior-backend-engineer",
+    "type": "persona",
+    "title": "시니어 백엔드 엔지니어",
+    "description": "10년 경력의 백엔드 엔지니어 페르소나. 설계 패턴, 확장성, 보안, 운영 관점에서 코드를 검토하고 조언합니다.",
+    "tags": [
+      "backend",
+      "architecture",
+      "senior",
+      "mentoring",
+      "design-patterns"
+    ],
+    "tools": [
+      "cline",
+      "cursor"
+    ],
+    "author": "team-platform@company.com",
+    "version": "1.1.0",
+    "updated": "2026-03-18",
+    "file": "persona.md",
+    "preview": "10년 경력 백엔드 엔지니어로서 확장성, 유지보수성, 운영 안정성을 최우선으로 고려합니다. 기술 부채를 솔직하게 지적하고 현실적인 개선 방향을 제시합니다.",
+    "category": "personas",
+    "zipPath": "zips/senior-backend-engineer.tar.gz"
+  },
+  {
+    "id": "python-code-review",
+    "type": "skill",
+    "title": "Python 코드 리뷰 어시스턴트",
+    "description": "PEP8, type hint, 보안 취약점, 성능 이슈를 종합적으로 검토하는 Python 코드 리뷰 스킬입니다.",
+    "tags": [
+      "python",
+      "code-review",
+      "security",
+      "performance",
+      "type-hints"
+    ],
+    "tools": [
+      "cline",
+      "cursor"
+    ],
+    "author": "team-backend@company.com",
+    "version": "2.0.1",
+    "updated": "2026-03-15",
+    "file": "SKILL.md",
+    "preview": "Python 코드를 PEP8, type hint, 보안 취약점(OWASP), 성능 관점에서 종합 검토합니다. 각 지적 사항에 수정 예시 코드를 함께 제공합니다.",
+    "category": "skills",
+    "zipPath": "zips/python-code-review.tar.gz"
+  },
+  {
+    "id": "typescript-strict",
+    "type": "rules",
+    "title": "TypeScript Strict 프로젝트 규칙",
+    "description": "strict 모드 TypeScript 프로젝트를 위한 Cline/Cursor 코딩 규칙. any 금지, null 안전성, ESLint 연동 등을 포함합니다.",
+    "tags": [
+      "typescript",
+      "strict",
+      "eslint",
+      "frontend",
+      "backend"
+    ],
+    "tools": [
+      "cline",
+      "cursor"
+    ],
+    "author": "team-frontend@company.com",
+    "version": "1.0.0",
+    "updated": "2026-03-10",
+    "file": ".clinerules",
+    "preview": "TypeScript strict 모드 프로젝트 규칙. any 타입 사용 금지, 옵셔널 체이닝 필수, 명시적 반환 타입 선언 등을 강제합니다.",
+    "category": "rules",
+    "zipPath": "zips/typescript-strict.tar.gz"
+  }
+]
