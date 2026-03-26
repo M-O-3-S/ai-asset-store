@@ -1,0 +1,15 @@
+{
+  "id": "embedded-c-refactor",
+  "type": "skill",
+  "title": "임베디드 C 리팩토링 가이드",
+  "description": "SOLID 원칙 기반 C 코드 개선 에이전트 지침. 펌웨어 레이어 분리, 헤더 의존성 정리, 매직 넘버 제거 등을 체계적으로 수행합니다.",
+  "tags": ["embedded", "C", "refactoring", "firmware", "SOLID"],
+  "tools": ["cline", "cursor"],
+  "author": "team-firmware@company.com",
+  "version": "1.2.0",
+  "updated": "2026-03-20",
+  "rating": 4.8,
+  "downloads": 142,
+  "file": "SKILL.md",
+  "preview": "이 스킬은 임베디드 C 코드베이스를 SOLID 원칙에 따라 리팩토링합니다. HAL 레이어 분리, 전역 변수 최소화, 단위 테스트 가능한 구조로 개선합니다."
+}

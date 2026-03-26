@@ -1,0 +1,53 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Build catalog.json
+        run: node scripts/build-catalog.js
+
+      - name: Build asset archives
+        run: |
+          mkdir -p dist/zips
+
+          for category in skills rules personas prompts workflows; do
+            dir="store/${category}"
+            if [ -d "$dir" ]; then
+              for assetDir in "$dir"/*/; do
+                [ -d "$assetDir" ] || continue
+                name=$(basename "$assetDir")
+                tar -czf "dist/zips/${name}.tar.gz" \
+                  -C "$dir" "$name"
+                echo "Archived: ${name}.tar.gz"
+              done
+            fi
+          done
+
+      - name: Copy site files
+        run: |
+          mkdir -p dist
+          cp -r site/* dist/
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          force_orphan: true

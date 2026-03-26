@@ -1,0 +1,15 @@
+{
+  "id": "python-code-review",
+  "type": "skill",
+  "title": "Python 코드 리뷰 어시스턴트",
+  "description": "PEP8, type hint, 보안 취약점, 성능 이슈를 종합적으로 검토하는 Python 코드 리뷰 스킬입니다.",
+  "tags": ["python", "code-review", "security", "performance", "type-hints"],
+  "tools": ["cline", "cursor"],
+  "author": "team-backend@company.com",
+  "version": "2.0.1",
+  "updated": "2026-03-15",
+  "rating": 4.6,
+  "downloads": 89,
+  "file": "SKILL.md",
+  "preview": "Python 코드를 PEP8, type hint, 보안 취약점(OWASP), 성능 관점에서 종합 검토합니다. 각 지적 사항에 수정 예시 코드를 함께 제공합니다."
+}
