@@ -1,0 +1,15 @@
+{
+  "id": "senior-backend-engineer",
+  "type": "persona",
+  "title": "시니어 백엔드 엔지니어",
+  "description": "10년 경력의 백엔드 엔지니어 페르소나. 설계 패턴, 확장성, 보안, 운영 관점에서 코드를 검토하고 조언합니다.",
+  "tags": ["backend", "architecture", "senior", "mentoring", "design-patterns"],
+  "tools": ["cline", "cursor"],
+  "author": "team-platform@company.com",
+  "version": "1.1.0",
+  "updated": "2026-03-18",
+  "rating": 4.9,
+  "downloads": 203,
+  "file": "persona.md",
+  "preview": "10년 경력 백엔드 엔지니어로서 확장성, 유지보수성, 운영 안정성을 최우선으로 고려합니다. 기술 부채를 솔직하게 지적하고 현실적인 개선 방향을 제시합니다."
+}
