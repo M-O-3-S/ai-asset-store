@@ -1,0 +1,24 @@
+---
+alwaysApply: true
+---
+
+# AI Asset Store — 프로젝트 규칙
+
+작업 시작 전 반드시 읽어야 할 파일:
+- **`SPEC.md`** — 시스템 계약 (스키마·카테고리·파이프라인)
+- **`AGENTS.md`** — 운영 규칙 (asset 추가 절차·코드 스타일·금지 사항)
+
+## 핵심 원칙
+
+- SPEC.md가 Single Source of Truth — 코드와 충돌 시 코드를 수정
+- `gh-pages` 브랜치 직접 push 금지
+- SPEC S3에 없는 `type` 값 사용 금지
+- SPEC S4에 없는 필드를 `meta.json`에 임의 추가 금지
+
+## 빠른 참조
+
+| 파일 | 역할 |
+|------|------|
+| `SPEC.md` | 계약 (변경 시 사용자 승인 필요) |
+| `AGENTS.md` | 운영 규칙 전문 |
+| `scripts/check-asset-ids.js` | `node scripts/check-asset-ids.js` |

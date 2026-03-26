@@ -1,0 +1,9 @@
+!include AGENTS.md
+
+---
+
+## Cline 전용 추가 설정
+
+- 작업 시작 시 `SPEC.md`와 `AGENTS.md`를 먼저 읽어라
+- `store/` 작업 후 반드시 `node scripts/check-asset-ids.js` 실행
+- `store/rules/` 내부의 `.clinerules` 파일들은 배포 대상 asset이지 이 파일과 다른 용도임
