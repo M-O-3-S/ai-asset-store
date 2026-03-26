@@ -9,11 +9,14 @@ AI Asset Store에 기여해 주셔서 감사합니다.
 ```
 0. SPEC.md S3·S4 확인 (타입, 스키마)
 1. main에서 feature/add-{asset-name} 브랜치 생성
-2. store/{category}/{asset-name}/ 디렉토리에 파일 추가
+2. node scripts/new-asset.js 실행 → 디렉토리·파일 자동 생성
+   (수동 작성 시: store/{category}/{asset-name}/ 에 파일 추가)
 3. node scripts/check-asset-ids.js 로 ID 중복 검증
 4. PR 제출 → 리뷰어 승인
 5. main merge → GitHub Actions 자동 빌드·배포
 ```
+
+> **간편 등록**: `node scripts/new-asset.js`를 실행하면 대화형 프롬프트로 meta.json·body 파일을 자동 생성합니다.
 
 ## 카테고리 선택
 
@@ -33,6 +36,7 @@ AI Asset Store에 기여해 주셔서 감사합니다.
 
 ```json
 {
+  "$schema": "../../../meta.schema.json",
   "id": "my-asset-name",
   "type": "skill",
   "title": "asset 제목",
@@ -42,7 +46,7 @@ AI Asset Store에 기여해 주셔서 감사합니다.
   "author": "your-email@company.com",
   "version": "1.0.0",
   "updated": "YYYY-MM-DD",
-"file": "SKILL.md",
+  "file": "SKILL.md",
   "preview": "검색 결과에 노출될 200자 이내 미리보기 텍스트"
 }
 ```

@@ -8,6 +8,9 @@
 ## Commands
 
 ```bash
+# 새 asset 대화형 생성 (디렉토리·meta.json·body 파일 자동 생성)
+node scripts/new-asset.js
+
 # asset ID 중복 검사 (store/ 변경 후 반드시 실행)
 node scripts/check-asset-ids.js
 
