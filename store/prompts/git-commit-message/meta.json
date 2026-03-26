@@ -8,7 +8,6 @@
   "author": "team-devops@company.com",
   "version": "1.0.3",
   "updated": "2026-03-22",
-  "downloads": 178,
-  "file": "prompt.md",
+"file": "prompt.md",
   "preview": "git diff 또는 변경 내용 설명을 입력하면 Conventional Commits 규격(feat/fix/docs/refactor 등)에 맞는 커밋 메시지를 생성합니다."
 }

@@ -72,9 +72,6 @@ function createCard(asset) {
       ${(asset.tags || []).slice(0, 4).map(t => `<span class="tag">${esc(t)}</span>`).join('')}
     </div>
     <div class="card-footer">
-      <div class="card-meta">
-        <span class="downloads">↓ ${asset.downloads ?? 0}</span>
-      </div>
       <span>v${esc(asset.version || '1.0.0')}</span>
     </div>
   `;
@@ -102,8 +99,7 @@ function openModal(asset) {
     <div class="modal-info">
       <span><strong>버전</strong> ${esc(asset.version || '-')}</span>
       <span><strong>업데이트</strong> ${esc(asset.updated || '-')}</span>
-      <span><strong>다운로드</strong> ${asset.downloads ?? 0}회</span>
-      <span><strong>작성자</strong> ${esc(asset.author || '-')}</span>
+<span><strong>작성자</strong> ${esc(asset.author || '-')}</span>
     </div>
     <div class="modal-tools">${toolBadges}</div>
     <a class="download-btn" href="${zipHref}" download>다운로드 (.tar.gz)</a>
