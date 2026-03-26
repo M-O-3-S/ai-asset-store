@@ -73,7 +73,6 @@ function createCard(asset) {
     </div>
     <div class="card-footer">
       <div class="card-meta">
-        <span class="rating">★ ${asset.rating ?? '-'}</span>
         <span class="downloads">↓ ${asset.downloads ?? 0}</span>
       </div>
       <span>v${esc(asset.version || '1.0.0')}</span>
@@ -103,7 +102,6 @@ function openModal(asset) {
     <div class="modal-info">
       <span><strong>버전</strong> ${esc(asset.version || '-')}</span>
       <span><strong>업데이트</strong> ${esc(asset.updated || '-')}</span>
-      <span><strong>평점</strong> ★ ${asset.rating ?? '-'}</span>
       <span><strong>다운로드</strong> ${asset.downloads ?? 0}회</span>
       <span><strong>작성자</strong> ${esc(asset.author || '-')}</span>
     </div>

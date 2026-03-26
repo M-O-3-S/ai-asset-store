@@ -1,0 +1,21 @@
+name: Validate PR
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'store/**'
+
+permissions:
+  contents: read
+
+jobs:
+  check-asset-ids:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Check for duplicate asset IDs
+        run: node scripts/check-asset-ids.js
