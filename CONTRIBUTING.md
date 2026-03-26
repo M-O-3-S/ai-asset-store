@@ -38,9 +38,7 @@ AI Asset Store에 기여해 주셔서 감사합니다.
   "author": "your-email@company.com",
   "version": "1.0.0",
   "updated": "YYYY-MM-DD",
-  "rating": 0,
-  "downloads": 0,
-  "file": "SKILL.md",
+"file": "SKILL.md",
   "preview": "검색 결과에 노출될 200자 이내 미리보기 텍스트"
 }
 ```

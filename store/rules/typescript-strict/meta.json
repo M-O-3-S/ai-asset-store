@@ -8,7 +8,6 @@
   "author": "team-frontend@company.com",
   "version": "1.0.0",
   "updated": "2026-03-10",
-  "downloads": 67,
-  "file": ".clinerules",
+"file": ".clinerules",
   "preview": "TypeScript strict 모드 프로젝트 규칙. any 타입 사용 금지, 옵셔널 체이닝 필수, 명시적 반환 타입 선언 등을 강제합니다."
 }

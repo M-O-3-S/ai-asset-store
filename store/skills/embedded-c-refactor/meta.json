@@ -8,7 +8,6 @@
   "author": "team-firmware@company.com",
   "version": "1.2.0",
   "updated": "2026-03-20",
-  "downloads": 142,
-  "file": "SKILL.md",
+"file": "SKILL.md",
   "preview": "이 스킬은 임베디드 C 코드베이스를 SOLID 원칙에 따라 리팩토링합니다. HAL 레이어 분리, 전역 변수 최소화, 단위 테스트 가능한 구조로 개선합니다."
 }
