@@ -2,13 +2,17 @@
 
 AI Asset Store에 기여해 주셔서 감사합니다.
 
+> **시작 전 필독**: [`SPEC.md`](./SPEC.md)(시스템 계약)와 [`AGENTS.md`](./AGENTS.md)(운영 규칙)를 먼저 읽으세요.
+
 ## 기여 플로우
 
 ```
+0. SPEC.md S3·S4 확인 (타입, 스키마)
 1. main에서 feature/add-{asset-name} 브랜치 생성
 2. store/{category}/{asset-name}/ 디렉토리에 파일 추가
-3. PR 제출 → 리뷰어 승인
-4. main merge → GitHub Actions 자동 빌드·배포
+3. node scripts/check-asset-ids.js 로 ID 중복 검증
+4. PR 제출 → 리뷰어 승인
+5. main merge → GitHub Actions 자동 빌드·배포
 ```
 
 ## 카테고리 선택
